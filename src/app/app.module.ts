@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ListsuggestionComponent } from './core/list-suggestion/list-suggestion.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule, DatePipe } from '@angular/common';
+import { NotfoundComponent } from './core/notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CommonModule, DatePipe } from '@angular/common';
     NavComponent,
     HomeComponent,
     FooterComponent,
-    ListsuggestionComponent
+    ListsuggestionComponent,
+    NotfoundComponent
     
   ],
   imports: [
