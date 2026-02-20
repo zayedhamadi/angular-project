@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Suggestion } from '../../models/suggestion';
+import { Suggestion } from '../../../models/suggestion';
 
 @Component({
   selector: 'app-list-suggestion',
@@ -45,11 +45,11 @@ export class ListsuggestionComponent {
       nbLikes: 0
     }
   ];
-searchTerm: any;
+  searchTerm: any;
   favorites: Suggestion[] = [];
-searchText: string = '';
+  searchText: string = '';
 
- likeSuggestion(s: Suggestion) {
+  likeSuggestion(s: Suggestion) {
     s.nbLikes++;
   }
 
