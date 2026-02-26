@@ -7,6 +7,7 @@ import { Suggestion } from '../../../models/suggestion';
   styleUrl: './list-suggestion.component.css'
 })
 export class ListsuggestionComponent {
+
   suggestions: Suggestion[] = [
     {
       id: 1,
@@ -64,4 +65,5 @@ export class ListsuggestionComponent {
       s.category.toLowerCase().includes(this.searchText.toLowerCase())
     );
   }
+
 }

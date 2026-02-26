@@ -1,15 +1,17 @@
-<h2 class="title">Liste des Suggestions</h2>
+<div class="list-header">
+  <h2 class="title">Liste des Suggestions</h2>
+  <button class="btn add-btn" routerLink="/suggestions/add">
+    ➕ Ajouter suggestion
+  </button>
+</div>
 
 <input type="text" class="search" [(ngModel)]="searchText" placeholder="🔍 Rechercher par titre ou catégorie" />
 
 <div class="suggestions">
-
   <div class="card" *ngFor="let s of filteredSuggestions()">
     <div class="card-header">
       <h3>{{ s.title }}</h3>
-      <span class="status" [ngClass]="s.status">
-        {{ s.status }}
-      </span>
+      <span class="status" [ngClass]="s.status">{{ s.status }}</span>
     </div>
 
     <p class="description">{{ s.description }}</p>
@@ -23,19 +25,12 @@
     <div class="actions" *ngIf="s.status !== 'refusee'">
       <button class="like" (click)="likeSuggestion(s)">👍 Like</button>
       <button class="fav" (click)="addToFavorites(s)">⭐ Favoris</button>
-
-      <button class="details" [routerLink]="['/suggestions', s.id]">
-        📄 Details
-      </button>
-
+      <button class="details" [routerLink]="['/suggestions', s.id]">📄 Details</button>
     </div>
   </div>
-
 </div>
 
 <h3 class="fav-title">⭐ Favoris</h3>
 <ul class="fav-list">
-  <li *ngFor="let f of favorites">
-    {{ f.title }}
-  </li>
+  <li *ngFor="let f of favorites">{{ f.title }}</li>
 </ul>
