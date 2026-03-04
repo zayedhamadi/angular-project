@@ -42,7 +42,6 @@ Cette application permet aux utilisateurs de :
 
 ---
 
----
 
 ## ⚙️ Installation
 
@@ -58,7 +57,7 @@ Puis ouvrir :
 
 http://localhost:4200/
 
-
+---
 👨‍💻 Auteur
 Zayed Hamadi
 Workshop Angular – 2025
