@@ -48,7 +48,7 @@ Cette application permet aux utilisateurs de :
 ### 1️⃣ Cloner le projet
 
 ```bash
-git clone https://github.com/ton-username/ton-repository.git
+git clone[ https://github.com/ton-username/ton-repository.git](https://github.com/zayedhamadi/angular-project)
 2️⃣ Installer les dépendances
 npm install
 3️⃣ Lancer le serveur de développement
@@ -57,7 +57,4 @@ Puis ouvrir :
 
 http://localhost:4200/
 
----
-👨‍💻 Auteur
-Zayed Hamadi
-Workshop Angular – 2025
+
