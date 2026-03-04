@@ -1,0 +1,64 @@
+/* =======================
+   NAVBAR CONTAINER
+======================= */
+.navbar {
+    height: 70px;
+    padding: 0 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* =======================
+   LOGO
+======================= */
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #e2e8f0;
+    letter-spacing: 1px;
+}
+
+/* =======================
+   NAV LINKS
+======================= */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #cbd5e1;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 8px 14px;
+    border-radius: 8px;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+}
+
+/* Active link */
+.nav-links a.active {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+}
