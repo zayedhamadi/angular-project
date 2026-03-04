@@ -1,27 +1,79 @@
-# Tp12
+# 💡 Gestion des Suggestions – Angular Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.21.
+Application web développée avec **Angular 18** permettant la gestion des suggestions au sein d’un campus ou d’une organisation.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Description
 
-## Code scaffolding
+Cette application permet aux utilisateurs de :
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- ➕ Ajouter une suggestion
+- 📋 Consulter la liste des suggestions
+- 🔍 Voir les détails d’une suggestion
+- ✏️ Modifier une suggestion
+- 👍 Ajouter des likes
+- 🏷️ Classer par catégorie
+- 📅 Voir la date et le statut
+- ❌ Accéder à une page 404 personnalisée
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🛠️ Technologies utilisées
 
-## Running unit tests
+- Angular 18
+- TypeScript
+- HTML5
+- CSS3 (Design moderne – Glassmorphism)
+- Angular Router
+- Reactive Forms
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## 🧠 Concepts Angular appliqués
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Routing & Navigation
+- Reactive Forms avec validations
+- Data Binding
+- Directives (`*ngIf`, `*ngFor`, `ngClass`)
+- Services & Injection de dépendances
+- Paramètres dynamiques (`/suggestions/:id`)
+- Architecture modulaire
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 📂 Structure du projet
+src/
+│
+├── app/
+│ ├── components/
+│ │ ├── home/
+│ │ ├── suggestions-list/
+│ │ ├── suggestion-details/
+│ │ ├── add-suggestion/
+│ │ ├── edit-suggestion/
+│ │ └── not-found/
+│ │
+│ ├── services/
+│ │ └── suggestion.service.ts
+│ │
+│ └── app-routing.module.ts
+│
+└── index.html
+
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Cloner le projet
+
+```bash
+git clone https://github.com/ton-username/ton-repository.git
+2️⃣ Installer les dépendances
+npm install
+3️⃣ Lancer le serveur de développement
+ng serve
+Puis ouvrir :
+
+http://localhost:4200/
