@@ -1,5 +1,4 @@
-<div class="page" *ngIf="suggestion">
-
+<div class="details-container" *ngIf="suggestion">
     <div class="details-card">
 
         <div class="details-header">
@@ -32,8 +31,11 @@
 
         <div class="actions">
             <a routerLink="/suggestions" class="back-btn">
-                ⬅ Retour à la liste
+                ⬅ Back to list
             </a>
+            <button class="update-btn" [routerLink]="['/suggestions/edit', suggestion.id]">
+                ✏️ Update
+            </button>
         </div>
 
     </div>

@@ -9,13 +9,22 @@ import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule, DatePipe } from '@angular/common';
 import { NotfoundComponent } from './core/notfound/notfound.component';
+import { CoreComponent } from './core/core.component';
+import { FeaturesComponent } from './features/features.component';
+
+
+
+
+import { provideHttpClient, withFetch } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     FooterComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    CoreComponent,
+    FeaturesComponent
 
   ],
   imports: [
@@ -24,8 +33,8 @@ import { NotfoundComponent } from './core/notfound/notfound.component';
     FormsModule
   ],
   providers: [
-    provideClientHydration()
-  ],
+    provideClientHydration(),
+    provideHttpClient(withFetch())],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
