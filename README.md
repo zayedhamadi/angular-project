@@ -42,26 +42,6 @@ Cette application permet aux utilisateurs de :
 
 ---
 
-## 📂 Structure du projet
-src/
-│
-├── app/
-│ ├── components/
-│ │ ├── home/
-│ │ ├── suggestions-list/
-│ │ ├── suggestion-details/
-│ │ ├── add-suggestion/
-│ │ ├── edit-suggestion/
-│ │ └── not-found/
-│ │
-│ ├── services/
-│ │ └── suggestion.service.ts
-│ │
-│ └── app-routing.module.ts
-│
-└── index.html
-
-
 ---
 
 ## ⚙️ Installation
@@ -77,3 +57,8 @@ ng serve
 Puis ouvrir :
 
 http://localhost:4200/
+
+
+👨‍💻 Auteur
+Zayed Hamadi
+Workshop Angular – 2025
